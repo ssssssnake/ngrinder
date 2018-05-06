@@ -14,7 +14,7 @@ public final class ScriptUtils {
 		Process process = Runtime.getRuntime().exec(shellPath);
 		byte[] b = new byte[1024];
 		// flush the pipeline to prevent the child process from blocking
-		while (process.getInputStream().read() != -1) {
+		while (process.getInputStream().read(b) != -1) {
 
 		}
 		process.waitFor();

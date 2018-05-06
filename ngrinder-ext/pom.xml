@@ -11,5 +11,12 @@
 
     <artifactId>ngrinder-ext</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.ztesoft.zmq</groupId>
+            <artifactId>zmq-client</artifactId>
+            <version>1.8.2</version>
+        </dependency>
+    </dependencies>
 
 </project>

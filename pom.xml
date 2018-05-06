@@ -13,6 +13,7 @@
 		<module>ngrinder-runtime</module>
 		<module>ngrinder-groovy</module>
 		<module>ngrinder-sh</module>
+		<module>ngrinder-ext</module>
 	</modules>
 	<issueManagement>
 		<system>jira</system>
@@ -120,11 +121,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
-			<groupId>grinder</groupId>
-			<artifactId>grinder-patch</artifactId>
-			<version>3.9.1-patch</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>grinder</groupId>-->
+			<!--<artifactId>grinder-patch</artifactId>-->
+			<!--<version>3.9.1-patch</version>-->
+		<!--</dependency>-->
 		<!-- Commons -->
 		<dependency>
 			<groupId>commons-io</groupId>
