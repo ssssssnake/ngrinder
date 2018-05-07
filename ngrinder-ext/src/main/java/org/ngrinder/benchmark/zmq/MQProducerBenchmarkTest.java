@@ -6,9 +6,7 @@ import com.ztesoft.mq.client.api.common.exception.MQClientApiException;
 import com.ztesoft.mq.client.api.model.MQMessage;
 import com.ztesoft.mq.client.api.producer.Producer;
 import com.ztesoft.mq.client.impl.MQClientFactoryImpl;
-import org.ngrinder.common.util.ScriptUtils;
 
-import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,15 +22,15 @@ public class MQProducerBenchmarkTest {
 	private Producer currentProducer;
 	private MQMessage message;
 
-	static {
-		try {
-			ScriptUtils.execSh("/lvdata/perftest/shell/startup.sh");
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
+//	static {
+//		try {
+//			ScriptUtils.execSh("/lvdata/perftest/shell/startup.sh");
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+//	}
 
 	public MQProducerBenchmarkTest(String nameSrv) {
 
