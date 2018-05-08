@@ -10,13 +10,13 @@ public final class ScriptUtils {
 	/**
 	 * @param shellPath, e.g., /lvdata/perftest/shell/startup.sh
 	 */
-	public static void execSh(String shellPath) throws IOException, InterruptedException {
+	public static int execSh(String shellPath) throws IOException, InterruptedException {
 		Process process = Runtime.getRuntime().exec(shellPath);
 		byte[] b = new byte[1024];
 		// flush the pipeline to prevent the child process from blocking
 		while (process.getInputStream().read(b) != -1) {
 
 		}
-		process.waitFor();
+		return process.waitFor();
 	}
 }
