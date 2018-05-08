@@ -1,5 +1,7 @@
 cd /home/libin/perftest
 
+rm -rf store
+
 tar zxvf zmq-2.0.0-bin.tar.gz
 
 cd zmq/bin
